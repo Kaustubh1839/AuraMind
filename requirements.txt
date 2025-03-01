@@ -1,0 +1,8 @@
+# Streamlit for the web UI
+streamlit>=1.0.0
+
+# Ollama for AI-powered chatbot responses
+ollama>=0.1.0
+
+# Llama 3 model (ensure it's available in Ollama)
+llama3
