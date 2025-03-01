@@ -1,5 +1,10 @@
 import streamlit as st
 import ollama
+import os  # Add this
+
+# Ensure Streamlit runs on Railway's assigned port
+port = int(os.environ.get("PORT", 8501))
+os.environ["STREAMLIT_SERVER_PORT"] = str(port)
 
 st.set_page_config(page_title="🌿 Mental Health Support Chatbot")
 
